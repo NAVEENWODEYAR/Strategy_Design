@@ -1,6 +1,6 @@
 package com.bhas.pack2;
 
-public class GM
+public class GA 
 {
 
 }
