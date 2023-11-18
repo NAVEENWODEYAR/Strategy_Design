@@ -3,7 +3,10 @@ package com.bhas.pack2;
 public class Greet 
 {
 	// interface reference,
-		CGI cg = null;
+		private CGI cg = null;
+		
+	// Field Dependency Injection, not recommended,
+		public CGI cg1 = new GA();
 		
 	// Constructor DI,
 	public Greet(GA ga)
