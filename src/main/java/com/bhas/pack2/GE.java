@@ -2,9 +2,10 @@ package com.bhas.pack2;
 
 import java.time.LocalDateTime;
 
-public class GE 
+public class GE implements CGI
 {
-	public void wish()
+	@Override
+	public void wish(int hour)
 	{
 		if(LocalDateTime.now().getHour() > 17 || LocalDateTime.now().getHour() < 24)
 			System.out.println("\n Good Evening,");

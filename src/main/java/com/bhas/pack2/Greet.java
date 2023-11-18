@@ -1,10 +1,7 @@
 package com.bhas.pack2;
 
-import java.time.LocalDateTime;
-
 public class Greet 
 {
-	
 	// interface reference,
 		CGI cg = null;
 		
@@ -15,9 +12,13 @@ public class Greet
 	}
 	
 	// setter DI,
-	public void setObj(GA ga)
+	public void setObj(GM ga)
 	{
 		this.cg = ga;
 	}
 	
+	public void wish(int i)
+	{
+		cg.wish(i);
+	}
 }
