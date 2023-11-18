@@ -7,12 +7,9 @@ import java.util.Date;
 public class GM
 {
 	public void wish()
-	{
-		
-		LocalDateTime d = LocalDateTime.now();
-		System.out.println(LocalDateTime.now().toLocalTime().getHour());	
-
-		System.out.println("\n Good Morning,");
+	{	
+		if(LocalDateTime.now().getHour() > 24 || LocalDateTime.now().getHour() < 12)
+			System.out.println("\n Good Morning,");
 	}
 	
 	
